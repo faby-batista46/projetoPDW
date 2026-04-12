@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de consulta</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    }
+
+         body {
+            font-family: Arial, sans-serif;
+            background-image:linear-gradient(to right, #F2F2F2,#CDD971);
+            padding: 20px;
+            height: 100px;
+        }
+        
+        
+        .campo {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            margin: auto;
+            padding: 20px;
+            min-width: 300px;
+            max-width: 1000px;
+        }
+
+        footer{
+    background-color: var(--cor4);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    }
+
+
+         .mensagem {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+         #sucesso:target {
+            display: block;
+        }
+
+    </style>
+</head>
+<body >
+    <header>
+        <img src="imagens/logo-capa.png" alt="Logotipo do Centro Clínico Cuidado e Bem Estar" style="display: block; margin: auto; width: 350px; height: auto;">
+        <h1 style="text-align: center;">Agendamento de consulta</h1> <br>
+        <p style="text-align: center ;color: red;"><strong>ATENÇÃO:</strong></p>
+        <br>
+        <ul>
+            <li type="square">Para agendar uma consulta ou exame, siga as instruções abaixo:</li>
+            <li type="circle">Preencha o formulário de agendamento com suas informações pessoais e escolha a consulta ou exame desejado.</li>
+            <li type="circle">Em caso de <strong>exames</strong>, selecione no campo Consulta a opção <strong>“Orçamento”</strong>.</li>
+            <li type="circle">Após enviar o formulário, nossa equipe entrará em contato para confirmar o agendamento e fornecer detalhes adicionais.</li>
+            <li type="circle">Certifique-se de fornecer um número de telefone ou e-mail válido para que possamos entrar em contato com você.</li>
+            <li type="circle">Em caso de dúvidas ou necessidade de assistência, entre em contato conosco através do nosso canal de atendimento ao cliente.</li>
+
+        </ul>
+    </header>
+    <br>
+    <main>
+         <section class="agendamento" id="contato">
+            <form action="#sucesso"">
+               <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+               </div>
+            <div class="campo">
+                <label for="e-mail">E-mail</label>
+                <input type="email" id="nome" name="email" placeholder="exemplo@gmail.com" required>
+               </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" id="cidade" name="cidade" placeholder="Ex: São Paulo" required>
+               </div>
+               <div class="campo">
+            <label for="Consulta">Consulta</label>
+            <select name="consulta" required>
+                        <option value="">Selecione uma consulta</option>
+                        <option value="clinicogeral">Clínico Geral</option>
+                        <option value="nutricionista">Nutricionista</option>
+                        <option value="esteticista">Esteticista</option>
+                        <option value="orcamento">Orçamento</option>
+            </select>
+            </div>
+            <div class="campo">
+            <label for="estado">Estado</label>
+            <select name="estado" name="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+            </select>
+            <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mensagem de sucesso -->
+            <div id="sucesso" class="mensagem">
+                Agendamento enviado com sucesso!
+            </div>
+            </section>
+    </main>
+      <footer>
+        Site criado pela aluna Fabíola Batista - ADS- EAD.
+      </footer>
+</body>
+</html>
