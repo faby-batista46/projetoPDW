@@ -29,7 +29,7 @@ header{
 }
 header > img{
     margin: 10px auto;
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 header > p {
@@ -116,7 +116,7 @@ main > section[id="equipe"] > article > h2 {
 
 .servico img {
     width: 100%;
-    max-width: 200px; /* controla tamanho das imagens */
+    height: auto; 
     border-radius: 8px;
 }
 
