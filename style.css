@@ -29,8 +29,9 @@ header{
 }
 header > img{
     margin: 10px auto;
-    width: 100%;
-    height: auto;
+    max-width: 100%; 
+    height: auto;   
+    display: block;  
 }
 header > p {
     font-family: var(--font-padrao);
