@@ -110,9 +110,8 @@ main > section[id="equipe"] > article > h2 {
 }
 
 .servico img {
-    width: 100%;
-    height: auto; 
-    border-radius: 8px;
+   width: 100%;
+    border-radius: 8px; /* deixa a foto com cantos arredondados */
 }
 
 .membros {
