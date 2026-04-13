@@ -83,9 +83,10 @@ main{
 }
 
 main h1{
-    color: black;
     font-family: var(--font-destaque);
+    color: black;
     font-size: 1.3em;
+    margin: 0px 0 20px 0;
     background-color: gray;
     text-align: center;
     text-indent: 8px;
@@ -94,6 +95,7 @@ main > section[id="servicos"] > article > h2 {
     font-family: var(--font-destaque);
     color: black;
     font-size: 1.3em;
+    margin: 0px 0 20px 0;
     background-color: rgba(128, 128, 128, 0.24);
     text-indent: 8px;
     text-align: center;
@@ -103,6 +105,7 @@ main > section[id="equipe"] > article > h2 {
     font-family: var(--font-destaque);
     color: black;
     font-size: 1.3em;
+    margin: 10px 0 20px 0;
     background-color: rgba(128, 128, 128, 0.24);
     text-indent: 8px;
     text-align: center;
@@ -112,6 +115,7 @@ main > section[id="contato"] > article > h2 {
     font-family: var(--font-destaque);
     color: black;
     font-size: 1.3em;
+    margin: 10px 0 20px 0;
     background-color: rgba(128, 128, 128, 0.24);
     text-indent: 8px;
     text-align: center;
