@@ -29,7 +29,8 @@ header{
 }
 header > img{
     margin: 10px auto;
-    max-width: 100%; 
+    max-width: 400px; 
+    width: 100%;
     height: auto;   
     display: block;  
 }
