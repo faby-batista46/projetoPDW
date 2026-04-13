@@ -16,6 +16,10 @@
     --font-destaque: 'Fredericka the Great', cursive;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     background-color: var(--cor0);
@@ -26,6 +30,12 @@ header{
     min-height: 150px;
     text-align: center;
     padding: 10px;
+}
+
+header > img{
+    margin: 10px auto;
+    max-width: 320px;
+    height: auto;
 }
 header > p {
     font-family: var(--font-padrao);
