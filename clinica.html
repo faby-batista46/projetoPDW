@@ -31,17 +31,17 @@
             <div class="grid-servicos">
                 <div class="servico">
                     <h3>Raio-X</h3>
-                     <a href="agendamento.html" target="_blank"><img src="imagens/raiox-p.png" alt="Raio X"></a>
+                     <img src="imagens/raiox-p.png" alt="Raio-X">
                 </div>
                 <div class="servico">
                     <h3>Ressonância Magnética</h3>
-                    <a href="agendamento.html" target="_blank"><img src="imagens/ressonancia.jpeg" alt="Ressonância Magnética"></a>
+                    <img src="imagens/ressonancia.jpeg" alt="Ressonância Magnética">
                 </div>
             </div>
             <div class="grid-servicos">
                 <div class="servico">
                     <h3>Hemograma Completo</h3>
-                    <a href="agendamento.html" target="_blank"><img src="imagens/sangue-p.jpeg" alt="Hemograma Completo"></a>
+                    <img src="imagens/sangue-p.jpeg" alt="Hemograma completo">
                 </div>
             </div>
         </article>
@@ -51,11 +51,11 @@
             <div class="grid-servicos">
                 <div class="servico">
                     <h3>Clínico Geral</h3>
-                    <a href="agendamento.html" target="_blank"><img src="imagens/clinicogeral-p.jpeg" alt="Consulta Clínico Geral"></a>
+                    <img src="imagens/clinicogeral-p.jpeg" alt="Clinico Geral">
                 </div>
                 <div class="servico">
                     <h3>Nutricionista</h3>
-                    <a href="agendamento.html" target="_blank"><img src="imagens/nutri-p.jpeg" alt="Consulta Nutricionista"></a>
+                    <img src="imagens/nutri-p.jpeg" alt="Nutricionista">
                 </div>
             </div>
         </article>
@@ -102,6 +102,70 @@
         </div>
     </article>
 </section>
+<section class="agendamento" id="contato">
+            <form action="#sucesso">
+               <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+               </div>
+            <div class="campo">
+                <label for="e-mail">E-mail</label>
+                <input type="email" id="nome" name="email" placeholder="exemplo@gmail.com" required>
+               </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" id="cidade" name="cidade" placeholder="Ex: São Paulo" required>
+               </div>
+               <div class="campo">
+            <label for="Consulta">Consulta</label>
+            <select name="consulta" required>
+                        <option value="">Selecione uma consulta</option>
+                        <option value="clinicogeral">Clínico Geral</option>
+                        <option value="nutricionista">Nutricionista</option>
+                        <option value="esteticista">Esteticista</option>
+                        <option value="orcamento">Orçamento</option>
+            </select>
+            </div>
+            <div class="campo">
+            <label for="estado">Estado</label>
+            <select name="estado" name="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+            </select>
+            <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mensagem de sucesso -->
+            <div id="sucesso" class="mensagem">
+                Agendamento enviado com sucesso!
+            </div>
+            </section>
     </main>
     <footer>
         Site criado pela aluna Fabíola Batista - ADS- EAD.
