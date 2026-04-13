@@ -27,13 +27,6 @@ header{
     text-align: center;
     padding: 10px;
 }
-header > img{
-    margin: 10px auto;
-    max-width: 300px;
-    width: 100%;   
-    height: auto;
-    display: block;
-}
 header > p {
     font-family: var(--font-padrao);
     font-weight: normal;
@@ -44,23 +37,6 @@ header > p {
     padding-left: 10px;
     margin: auto;
     margin-bottom: 20px;
-}
-@media (min-width: 1024px) {
-  header > img {
-    max-width: 400px; /* aumenta um pouco em desktops grandes */
-  }
-}
-
-@media (max-width: 768px) {
-  header > img {
-    max-width: 250px; /* tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  header > img {
-    max-width: 200px; /* celulares */
-  }
 }
 
 nav{
