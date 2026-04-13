@@ -151,7 +151,7 @@ main > section[id="equipe"] > article > h2 {
 
 .servico img {
     width: 100%;
-    height: auto;
+    max-width: 200px;
     border-radius: 8px;
 }
 
@@ -168,7 +168,6 @@ main > section[id="equipe"] > article > h2 {
 
 .membro img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
